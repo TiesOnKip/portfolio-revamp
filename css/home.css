@@ -4,10 +4,67 @@ main {
     margin-left: 50px;
 }
 
-h1 {
+#main-text {
+    margin-top: 20vh;
     font-size: 4.5em;
     color: var(--white);
-    margin-top: 20vh;
+    width: fit-content;
+}
+
+#bounce {
+    display: inline-block;
+    color: var(--white);
+    width: fit-content;
+    animation: bounce 2s ease 0s 1 normal forwards;
+    margin-left: -15px;
+}
+
+
+
+@keyframes bounce {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-45px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(-24px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(-12px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(-6px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        animation-timing-function: ease-out;
+        transform: translateY(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px);
+    }
 }
 
 .button-tag {
@@ -16,8 +73,18 @@ h1 {
     animation: dash 10s linear forwards;
 }
 
+#main-link svg {
+    scale: 1;
+    transition: scale 0.2s;
+}
+
+#main-link svg:hover {
+    scale: 1.07;
+    filter: drop-shadow(0px 0px 5px var(--white));
+}
+
 #mirror {
-    transform: rotateZ(180deg);
+    transform: rotate(180deg);
 }
 
 @keyframes dash {
@@ -25,3 +92,4 @@ h1 {
         stroke-dashoffset: 0;
     }
 }
+
