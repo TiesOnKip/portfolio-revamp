@@ -1,0 +1,90 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    height: 80vh;
+    width: 30%;
+    margin: 0 auto;
+}
+
+.form-holder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    border: 2px solid gray;
+    border-radius: 10px;
+    padding: 40px;
+    filter: drop-shadow(0px 0px 5px var(--second-accent));
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--white);
+}
+
+label {
+    font-size: 1.25em;
+    margin-top: 10px;
+}
+
+#submit {
+    height: 50px;
+    color: var(--white);
+    background-color: rgb(187, 141, 225, 0.1);
+    border-radius: 5px;
+    border: 2px solid var(--main-accent);
+    font-size: 1.2em;
+    transition: 0.15s;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+#submit:hover {
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 5px var(--main-accent));
+    transform: scale(1.02)
+}
+
+#submit:active {
+    filter: drop-shadow(0px 0px 10px var(--white));
+    transform: scale(1.01)
+}
+
+#name, #email {
+    height: 40px;
+}
+
+#name, #email, #message {
+    background: none;
+    border: 2px solid white;
+    color: white;
+    border-radius: 8px;
+    font-size: 1.2em;
+    padding: 10px;
+    margin-top: 5px;
+    outline: none;
+}
+
+#name:focus, #email:focus, #message:focus {
+    border: 3px solid var(--white);
+    filter: drop-shadow(0px 0px 4px var(--white));
+}
+
+#name:focus + .nameLabel, #email:focus + .emailLabel, #message:focus + .messageLabel {
+    filter: drop-shadow(0px 0px 4px var(--white));
+}
+
+.reverse-form {
+    display: flex;
+    flex-direction: column-reverse;
+}
