@@ -7,8 +7,10 @@ main {
     color: var(--white);
     font-size: 1.5em;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 80px;
     width: 50vw;
+    margin-bottom: 80px;
+    z-index: 1;
 }
 
 u {
@@ -24,6 +26,7 @@ u {
         width: 100%;
         padding: 0 40px;
         font-size: 1.2em;
+        margin-top: 40px;
     }
     footer p{
         margin-top: 15px;
