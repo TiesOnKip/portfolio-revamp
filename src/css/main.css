@@ -41,14 +41,14 @@ header {
     top: 0;
     height: 72px;
     z-index: 200000;
-    background-color: var(--bg-color);
+    background-color: transparent;
 }
 
 header>a>svg {
     width: 80px;
     height: 80px;
-    margin-left: 20px;
-    margin-top: 20px;
+    margin-left: 17px;
+    margin-top: 17px;
     transition: 0.2s;
 }
 
@@ -208,7 +208,7 @@ footer {
     width: 100%;
     height: 60px;
     text-align: center;
-    background-color: var(--bg-color);
+    background-color: transparent;
 }
 
 footer p {
