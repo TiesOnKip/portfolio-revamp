@@ -27,8 +27,10 @@
         </a>
         <div class="desktop-nav-wrapper">
             <nav class="desktop-nav">
-                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">Over</a>
                 <a href="contact.html">Contact</a>
+                <a href="projects.html">Projecten</a>
             </nav>
         </div>
         <button class="sidebar-toggle">Menu</button>
@@ -38,11 +40,11 @@
         <div>
             <section class="contact">
                 <h1>Contact</h1>
-                <p>Feel free to contact me for any questions or inquiries.</p>
+                <p>Voel je vrij om mij te contacteren bij vragen of opmerkingen.</p>
                 <form action="https://formspree.io/f/xjkvgdob" method="post">
                     <div class="reverse-form">
                         <input type="text" id="name" name="name" required />
-                        <label class="nameLabel" for="name">Name</label>
+                        <label class="nameLabel" for="name">Naam</label>
                     </div>
                     <div class="reverse-form">
                         <input type="email" id="email" name="email" required />
@@ -50,17 +52,13 @@
                     </div>
                     <div class="reverse-form">
                         <textarea id="message" name="message" required></textarea>
-                        <label class="messageLabel" for="message">Message</label>
+                        <label class="messageLabel" for="message">Bericht</label>
                     </div>
-                    <button id="submit" type="submit">Send</button>
+                    <button id="submit" type="submit">Versturen</button>
                 </form>
             </section>
         </div>
     </main>
-
-    <footer>
-        <p>All rights reserved. &copy;</p>
-    </footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -70,8 +68,10 @@
             mobileNavWrapper.classList.add("mobile-nav-wrapper");
             mobileNavWrapper.innerHTML = `
                 <nav class="mobile-nav">
-                    <a href="about.html">About</a>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Over</a>
                     <a href="contact.html">Contact</a>
+                    <a href="projects.html">Projecten</a>
                 </nav>
             `;
             document.body.appendChild(mobileNavWrapper);

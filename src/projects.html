@@ -27,16 +27,14 @@
         </a>
         <div class="desktop-nav-wrapper">
             <nav class="desktop-nav">
-                <a href="about.html">About</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">Over</a>
                 <a href="contact.html">Contact</a>
+                <a href="projects.html">Projecten</a>
             </nav>
         </div>
         <button class="sidebar-toggle">Menu</button>
     </header>
-
-    <footer>
-        <p>All rights reserved. &copy;</p>
-    </footer>
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -46,9 +44,11 @@
             mobileNavWrapper.classList.add("mobile-nav-wrapper");
             mobileNavWrapper.innerHTML = `
                 <nav class="mobile-nav">
-                    <a href="about.html">About</a>
+                    <a href="index.html">Home</a>
+                    <a href="about.html">Over</a>
                     <a href="contact.html">Contact</a>
-                </nav>
+                    <a href="projects.html">Projecten</a>
+                </nav>  
             `;
             document.body.appendChild(mobileNavWrapper);
 

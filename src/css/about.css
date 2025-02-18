@@ -13,6 +13,10 @@ main {
     z-index: 1;
 }
 
+main p {
+    margin-top: 40px;
+}
+
 u {
     text-decoration: underline;
     text-decoration-color: var(--main-accent);
