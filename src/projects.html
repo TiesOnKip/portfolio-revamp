@@ -10,6 +10,8 @@
 </head>
 
 <body>
+    <div id="circularcursor"></div>
+
     <header>
         <a href="index.html">
             <svg class="logo" viewbox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,6 +38,7 @@
         <button class="sidebar-toggle">Menu</button>
     </header>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
             const header = document.querySelector("header");
@@ -56,6 +59,15 @@
                 header.classList.toggle("nav-opened");
                 mobileNavWrapper.classList.toggle("show");
             });
+        });
+
+        $(document).ready(function () {
+            $(document).on('mousemove', function (e) {
+                $('#circularcursor').css({
+                    left: e.pageX,
+                    top: e.pageY
+                });
+            })
         });
     </script>
 </body>
