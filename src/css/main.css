@@ -160,6 +160,10 @@ div.mobile-nav-wrapper {
 }
 
 @media screen and (max-width: 750px) {
+    body::before {
+        background-image: none;
+    }
+    
     #circularcursor {
         display: none;
     }
