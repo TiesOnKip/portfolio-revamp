@@ -54,7 +54,7 @@ main {
     }
   
     .skills-container {
-      margin: 60px; /* Reduce margin for smaller screens */
+      margin: 40px; /* Reduce margin for smaller screens */
     }
   }
   
