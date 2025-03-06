@@ -61,20 +61,6 @@ body::before {
     z-index: -1;
 }
 
-@media screen and (max-width: 600px) {
-    body::before {
-        background-size: 10vw 10vw;
-        background-image: radial-gradient(var(--main-accent) 0.2vw, transparent 0);
-    }
-}
-
-@media screen and (max-width: 300px) {
-    body::before {
-        background-size: 20vw 20vw;
-        background-image: radial-gradient(var(--main-accent) 0.5vw, transparent 0);
-    }
-}
-
 header {
     display: flex;
     align-items: center;
