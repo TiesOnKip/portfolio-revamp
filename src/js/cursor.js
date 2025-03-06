@@ -6,14 +6,11 @@ $(document).ready(function () {
     });
   });
 
-  // Button hover effect
-  $("svg").hover(
+  $("svg, a, button").hover(
     function () {
-      // Mouse enter
       $("body").addClass("button-hover");
     },
     function () {
-      // Mouse leave
       $("body").removeClass("button-hover");
     }
   );
