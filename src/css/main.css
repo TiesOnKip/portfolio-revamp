@@ -214,11 +214,6 @@ div.mobile-nav-wrapper {
         transition: translate 0.3s, opacity 0.3s;
         z-index: 100000;
         background-color: var(--bg-color);
-        /* Remove background image on mobile */
-        /* background-image: radial-gradient(
-          var(--main-accent-transparent) 0.12vw,
-          transparent 0
-        ); */
         background-size: 5vw 5vw;
         background-position: 0 0;
         pointer-events: none;
