@@ -5,4 +5,16 @@ $(document).ready(function () {
       top: e.pageY
     });
   });
+
+  // Button hover effect
+  $("svg").hover(
+    function () {
+      // Mouse enter
+      $("body").addClass("button-hover");
+    },
+    function () {
+      // Mouse leave
+      $("body").removeClass("button-hover");
+    }
+  );
 });
