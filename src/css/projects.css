@@ -158,9 +158,10 @@ main p {
   padding: 5px;
   position: absolute;
   z-index: 1;
-  bottom: 125%;
+  top: 100%;
   left: 50%;
   margin-left: -75px;
+  margin-top: 5px;
   opacity: 0;
   transition: opacity 0.3s;
   border: 1px solid var(--main-accent);
@@ -169,12 +170,12 @@ main p {
 .skill-tooltip::after {
   content: "";
   position: absolute;
-  top: 100%;
+  bottom: 100%;
   left: 50%;
   margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: var(--main-accent) transparent transparent transparent;
+  border-color: transparent transparent var(--main-accent) transparent;
 }
 
 .skill-wrapper:hover .skill-tooltip {
