@@ -62,6 +62,7 @@ main p {
 #project-container {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 80%;
   padding: 20px;
 }
@@ -106,6 +107,10 @@ main p {
   box-shadow: 0px 0px 8px var(--main-accent);
 }
 
+.project3, .project4 {
+  margin-top: 20px;
+}
+
 @media (max-width: 768px) {
   #project-container {
     flex-direction: column;
@@ -122,7 +127,8 @@ main p {
   color: var(--white);
   font-size: 1.3em;
   text-align: center;
-  margin-top: 30px;
+  margin: 30px;
+
 }
 
 #more-projects a {
@@ -135,4 +141,43 @@ main p {
 #more-projects a:hover {
   color: var(--white); /* A slightly different color on hover */
   text-decoration: underline;
+}
+
+.skill-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.skill-tooltip {
+  visibility: hidden;
+  width: 150px;
+  background-color: var(--bg-color);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border: 1px solid var(--main-accent);
+}
+
+.skill-tooltip::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--main-accent) transparent transparent transparent;
+}
+
+.skill-wrapper:hover .skill-tooltip {
+  visibility: visible;
+  opacity: 1;
 }

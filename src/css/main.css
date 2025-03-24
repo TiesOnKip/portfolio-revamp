@@ -44,11 +44,12 @@ body {
 
 body {
     background-color: var(--bg-color);
+    overflow-x: hidden;
 }
 
 body::before {
     content: "";
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
